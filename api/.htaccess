@@ -1,0 +1,20 @@
+#########################################
+# REPLACE BY YOUR OWN DIRECTORY CONFIG  #
+#      RewriteBase & RewriteRule        #
+#########################################
+
+# On suit les liens symboliques
+Options +FollowSymlinks
+Options -Indexes
+
+# Activation du mod rewrite d'Apache
+RewriteEngine On
+RewriteBase /var/www/web/github/php-simple-api-rest/api/
+
+
+# Réécriture des URL d'api
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /web/github/php-simple-api-rest/api/index.php/$1 [L]
+
+
