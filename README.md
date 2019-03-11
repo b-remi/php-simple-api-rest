@@ -14,6 +14,15 @@ Installation
  - don't forget to delete the `example.routes.php` file
 
 
+Include in Framework
+------------
+
+  - `Fmk\Lang` : Translator system to serve text to client in the specific language
+  - `Fmk\DB` : coming soon...
+  - `Fmk\JWT` : coming soon...
+  - `Fmk\FCM` : coming soon...
+
+
 Usage
 ------------
 
@@ -88,6 +97,7 @@ Router::delete_route_match('/remove/{id}', array('id'), function ($params) {
 
 
 ```
+
 
 License
 ------------
